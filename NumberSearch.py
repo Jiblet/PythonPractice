@@ -29,10 +29,4 @@ for x in range(1, 30000, 1):
       print(x, "is divisible by 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ")
 
 
-# Inner loop does modulo (division test (8%2=0  7%3=1)).
-
-  
-  
-# then make it work for 7 AND 
-
 
