@@ -1,15 +1,15 @@
 import math # need for math.pi for circle maths
 import turtle # need for turtle!
   
-#define some functions for drawing things with the turle easily 
 # Set up Turtle and window
 turtle.setup(700, 700)  # Determine the window size
 wn = turtle.Screen()  # Get a reference to the window
 wn.title("Circle Sectors")  # Change the window title
 wn.bgcolor("black")  # Set the background color
-t = turtle.Turtle()  # Create our favorite turtle
+t = turtle.Turtle()  # Create the turtle
 t.color("white")
 
+#define some functions for drawing things with the turle easily 
 def draw_circle(radius):
     t.showturtle()
     t.penup()
