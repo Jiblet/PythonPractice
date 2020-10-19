@@ -9,7 +9,7 @@ wn.bgcolor("black")  # Set the background color
 t = turtle.Turtle()  # Create the turtle
 t.color("white")
 
-#define some functions for drawing things with the turle easily 
+# define some functions for drawing things with the turle easily 
 def draw_circle(radius):
     t.showturtle()
     t.penup()
@@ -61,7 +61,7 @@ def get_angle():
         except:
             print('That isn\'t a number, please try again!')
 
-#Funcions defined, lets get some input from user.
+# Funcions defined, lets get some input from user.
 radius = get_radius()
 arc_angle = get_angle()
 # extra bit of error handling for values over 360°,where the sector area 
@@ -107,7 +107,7 @@ print("Circumference = ", rounded_circumference)
 print("Sector area = ", rounded_sector_area)
 print("Arc Length = ", rounded_arc_length)
 
-#bundle all of that into a string to send to our turtle
+# Bundle all of that into a string to send to our turtle
 message = "Rounded Values for circle where: "+ "\n" \
     + "Radius = " + str(radius) + " & Sector Angle = " + str(arc_angle) + ": \n" \
     + "    Circumference = " + str(rounded_circumference) + "\n" \
