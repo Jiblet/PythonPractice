@@ -61,10 +61,14 @@ def get_angle():
         except:
             print('That isn\'t a number, please try again!')
 
-
 #Funcions defined, lets get some input from user.
 radius = get_radius()
 arc_angle = get_angle()
+# extra bit of error handling for values over 360°,where the sector area 
+# becomes greate than the area of teh full circle:
+while arc_angle > 360:
+    print("Sector Angle must not be more than 360°")
+    arc_angle = get_angle()
 
 #-----------------------
 # This section does the maths bit.
@@ -90,7 +94,7 @@ rounded_arc_length = round(arc_length, 3)
 
 #-----------------------
 # This section prints the answers to the console.
-print("Answers")
+print("Answers:")
 print("Area = ", area)
 print("Circumference = ", circumference)
 print("Sector area = ", sector_area)
